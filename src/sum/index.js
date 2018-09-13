@@ -10,6 +10,13 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
+  if(typeof a !== "number" || typeof b !== "number"
+      || !isFinite(a) || !isFinite(b) || a!==a ||b!==b )
+  {
+    throw 1;
+  }
+  return a+b;
+
   /* your logic here...*/
 };
 
