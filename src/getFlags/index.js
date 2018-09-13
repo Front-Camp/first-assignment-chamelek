@@ -6,7 +6,20 @@
  * getFlags(arr); // [1, 2, 3, 4, 5, 6]
  */
 const getFlags = arr => {
-  /* your logic here...*/
+  var c = arr[0];
+  var a = 0;
+  for(var b : arr)
+  {
+    if(a == 0)
+    {
+           continue
+         }
+    else {
+      c.concat(b);
+    }
+    a++;
+    
+  }
+  return c;
 };
-
 export default getFlags;
