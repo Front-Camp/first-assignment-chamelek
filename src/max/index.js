@@ -17,7 +17,14 @@ Array.prototype.remove = function() {
     return this;
 };
 const max = arr => {
-	arr.remove(NaN);
+
+	for(var a : arr){
+        if(a!==a){
+            arr.remove(a);
+        }
+    }
+
+    }
 	arr.remove(Infinity);
 	return Math.max(...arr);
 	  /* your logic here...*/
